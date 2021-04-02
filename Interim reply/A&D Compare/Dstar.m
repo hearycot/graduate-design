@@ -65,7 +65,8 @@ function Routing = Dstar(Map,Spoint,Epoint,m,n)
            end
     end
     Path = [];  %´´½¨Â·¾¶¾ØÕó
-    k = 1;
+    Path(1,:) = [Epoint(1) Epoint(2)];
+    k = 2;
     while(1)
     temp_G_set_Pathpoint = G_set(Epoint(1),Epoint(2));
     for i = 1:3
